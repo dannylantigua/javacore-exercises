@@ -21,18 +21,18 @@ public class DontForgetToStoreIt {
         Scanner inputReader = new Scanner(System.in);
 
         System.out.println("Give me pi to at least 5 decimals: ");
-        inputReader.nextDouble();
+        pi = inputReader.nextDouble();
 
         System.out.println("What is the meaning of life, the universe & everything? ");
-        inputReader.nextInt();
+        meaningOfLifeAndEverything = inputReader.nextInt();
 
         System.out.println("What is your favorite kind of cheese? ");
-        inputReader.next();
+        cheese = inputReader.next();
 
         System.out.println("Do you like the color red or blue more? ");
-        inputReader.next();
+        color = inputReader.next();
 
-//            System.out.println("Ooh, " + color + " " + cheese +" sounds delicious!");
-//            System.out.println("The circumference of life is " +( 2 * pi * meaningOfLifeAndEverything));
+        System.out.println("Ooh, " + color + " " + cheese +" sounds delicious!");
+        System.out.println("The circumference of life is " +( 2 * pi * meaningOfLifeAndEverything));
     }
 }

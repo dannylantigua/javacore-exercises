@@ -10,6 +10,7 @@ package com.mycompany.practiceprogramming2;
  * @author dannylantigua
  */
 public class TheOrderOfThings {
+
     public static void main(String[] args) {
 
         double number;
@@ -26,7 +27,7 @@ public class TheOrderOfThings {
         material = "platinum";
         purpose = "good";
 
-        noun = "dragons";
+        noun = "dragon";
 
         // Using the + with strings, doesn't add it concatenates! (sticks them together)
         System.out.println(number + opinion + size + age + shape + color

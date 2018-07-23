@@ -10,6 +10,7 @@ package com.mycompany.practiceprogramming2;
  * @author dannylantigua
  */
 public class MoreBucketsMoreFun {
+
     public static void main(String[] args) {
 
         // Declare ALL THE THINGS
@@ -27,6 +28,7 @@ public class MoreBucketsMoreFun {
         System.out.println("but " + bugs + " bugs total.");
 
         System.out.println("Uh oh, my dog ate one.");
+        // We are using the -- operator to show the bugs eaten by the dog
         butterflies--;
         System.out.println("Now there are only " + butterflies + " butterflies left.");
         System.out.println("But still " + bugs + " bugs left, wait a minute!!!");

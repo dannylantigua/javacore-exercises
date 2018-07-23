@@ -10,6 +10,7 @@ package com.mycompany.practiceprogramming2;
  * @author dannylantigua
  */
 public class InABucket {
+
     public static void main(String[] args) {
 
         // You can declare all KINDS of variables.
