@@ -2,14 +2,10 @@
 
 This repository holds exercises from the basic concepts to advanced Java. The file structure is the following:
 
-1. Basics: Printing and Commenting in Java.
-2. Variables: Using variables to hold values.
-3. Scanner.
-4. Conditonal: If/Else and Switch.
-5. Random.
-6. Loops: Whiles, Dos, Fors.
-7. Methods.
-9. Arrays.
+1. Java Basics: Basic exercises that include commenting, printing on console, the use of variables for basic math operations, random functions, loops, conditional statements, methods and arrays.
+2. Classes and Objects.
+3. Intermediate Java.
+4. Advanced Java.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
