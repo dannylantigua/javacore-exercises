@@ -1,4 +1,4 @@
-## Classes and Objects
+## Refactoring Into Objects
 
 Taking exercises from Java Basics and refactoring them into Classes, Objects and Methods.
 
