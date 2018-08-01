@@ -16,8 +16,11 @@ In this section there are exercises for more advanced OOP concepts. These concep
 * Ice cream
     Model ice cream as if the class were to be part of the control system at the dairy that makes the ice cream.
     Model ice cream as if the class were to be part of the stocking system at a grocery store.
+* Book.
+    Model a book as if the class were to be part of a publishing system that the author uses to write the book.
 
 2. Refactor Into Objects: Taking exercises from java basics and refactoring them into objects, classes and methods.
+3. SimpleCalculator: Creating a class that performs basic operations (addition, subtraction, multiplication and division) and call them on the Main method/entry point.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
