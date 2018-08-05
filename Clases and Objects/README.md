@@ -21,6 +21,8 @@ In this section there are exercises for more advanced OOP concepts. These concep
 
 2. Refactor Into Objects: Taking exercises from java basics and refactoring them into objects, classes and methods.
 3. SimpleCalculator: Creating a class that performs basic operations (addition, subtraction, multiplication and division) and call them on the Main method/entry point.
+4. Shapes and Perimeters: Implementing abstract class to get the area and perimeter of a shape.
+5. UserIOClassLab: Implementing a class to read inputs and display outputs.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
