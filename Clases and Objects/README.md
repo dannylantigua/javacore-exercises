@@ -23,6 +23,7 @@ In this section there are exercises for more advanced OOP concepts. These concep
 3. SimpleCalculator: Creating a class that performs basic operations (addition, subtraction, multiplication and division) and call them on the Main method/entry point.
 4. Shapes and Perimeters: Implementing abstract class to get the area and perimeter of a shape.
 5. UserIOClassLab: Implementing a class to read inputs and display outputs.
+6. CollectionsAndMaps: StateCaptilas exercises handled in HashMaps.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com

@@ -2,10 +2,11 @@
 
 This repository holds exercises from the basic concepts to advanced Java. The file structure is the following:
 
-1. Java Basics: Basic exercises that include commenting, printing on console, the use of variables for basic math operations, random functions, loops, conditional statements, methods and arrays.
-2. Classes and Objects: Exercises and concepts about objects, classes, interfaces, inheritance, storage, memory management, collections, maps and more....
+1. Java Basics. [Variables, comments, functions, loops, conditionals, methods and Arrays]
+2. Classes and Objects. [Objects, Classes, Interfaces, Inheritance, Storage, Memory Management, Collections, Maps and more...]
 3. Intermediate Java.
 4. Advanced Java.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
+dlantigua@kemper.com
