@@ -1,4 +1,4 @@
-package com.softwareguild.main.java;
+package com.softwareguild.main;
 
 /**
  *

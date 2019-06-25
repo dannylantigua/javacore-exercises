@@ -24,6 +24,8 @@ In this section there are exercises for more advanced OOP concepts. These concep
 4. Shapes and Perimeters: Implementing abstract class to get the area and perimeter of a shape.
 5. UserIOClassLab: Implementing a class to read inputs and display outputs.
 6. CollectionsAndMaps: StateCaptilas exercises handled in HashMaps.
+7. StudentQuizScores: Handling data using Collections.
+8. ClassRosterApp: Applying MVC / CRUD development.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
