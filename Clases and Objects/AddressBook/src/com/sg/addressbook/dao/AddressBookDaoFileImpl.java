@@ -22,15 +22,15 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 	public static final String DELIMITER = "::";
 
 	@Override
-	public AddressBook addAddressBook(String addressId, AddressBook aBook) throws AddressBookDaoException {
-		AddressBook thisAddress = addressBook.put(aBook.getAddressId(), aBook);
+	public AddressBook addAddressBook(String lastName, AddressBook aBook) throws AddressBookDaoException {
+		AddressBook thisAddress = addressBook.put(aBook.getLastName(), aBook);
 		writeFile();
 		return thisAddress;
 	}
 
 	@Override
-	public AddressBook removeAddress(String addressId) throws AddressBookDaoException {
-		AddressBook removedAddress = addressBook.remove(addressId);
+	public AddressBook removeAddress(String lastName) throws AddressBookDaoException {
+		AddressBook removedAddress = addressBook.remove(lastName);
 		writeFile();
 		return removedAddress;
 	}
@@ -72,12 +72,11 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 			currentTokens = currentLine.split(DELIMITER);
 			AddressBook thisAddress = new AddressBook(currentTokens[0]);
 			thisAddress.setFirstName(currentTokens[1]);
-			thisAddress.setLastName(currentTokens[2]);
-			thisAddress.setStreetAddress(currentTokens[3]);
-			thisAddress.setCity(currentTokens[4]);
-			thisAddress.setState(currentTokens[5]);
-			thisAddress.setZipCode(Integer.parseInt(currentTokens[6]));
-			addressBook.put(thisAddress.getAddressId(), thisAddress);
+			thisAddress.setStreetAddress(currentTokens[2]);
+			thisAddress.setCity(currentTokens[3]);
+			thisAddress.setState(currentTokens[4]);
+			thisAddress.setZipCode(Integer.parseInt(currentTokens[5]));
+			addressBook.put(thisAddress.getLastName(), thisAddress);
 		}
 		scanner.close();
 	}
@@ -93,9 +92,8 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 
 		List<AddressBook> addressesList = this.listAllAddresses();
 		for(AddressBook thisAddress : addressesList) {
-			out.println(thisAddress.getAddressId() + DELIMITER
+			out.println(thisAddress.getLastName() + DELIMITER
 					+ thisAddress.getFirstName() + DELIMITER
-					+ thisAddress.getLastName() + DELIMITER
 					+ thisAddress.getStreetAddress() + DELIMITER
 					+ thisAddress.getCity() + DELIMITER
 					+ thisAddress.getState() + DELIMITER

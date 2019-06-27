@@ -6,10 +6,10 @@ import com.sg.addressbook.dto.AddressBook;
 
 public interface AddressBookDao {
 
-	AddressBook addAddressBook(String addressId, AddressBook addressBook)
+	AddressBook addAddressBook(String lastName, AddressBook addressBook)
 			throws AddressBookDaoException;
 
-	AddressBook removeAddress(String addressId) throws AddressBookDaoException;
+	AddressBook removeAddress(String lastName) throws AddressBookDaoException;
 
 	List<AddressBook> findAddressByLastName(String lastName) throws AddressBookDaoException;
 

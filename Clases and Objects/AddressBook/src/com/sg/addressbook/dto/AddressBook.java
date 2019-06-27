@@ -2,7 +2,6 @@ package com.sg.addressbook.dto;
 
 public class AddressBook {
 
-	private transient String addressId;
 	private transient String firstName;
 	private transient String lastName;
 	private transient String streetAddress;
@@ -10,8 +9,8 @@ public class AddressBook {
 	private transient String state;
 	private transient int zipCode;
 
-	public AddressBook(String addressId) {
-		this.addressId = addressId;
+	public AddressBook(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getFirstName() {
@@ -24,10 +23,6 @@ public class AddressBook {
 
 	public String getLastName() {
 		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
 	}
 
 	public String getStreetAddress() {
@@ -60,9 +55,5 @@ public class AddressBook {
 
 	public void setZipCode(int zipCode) {
 		this.zipCode = zipCode;
-	}
-
-	public String getAddressId() {
-		return addressId;
 	}
 }

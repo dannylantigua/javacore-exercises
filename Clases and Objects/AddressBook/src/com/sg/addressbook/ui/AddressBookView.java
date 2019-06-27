@@ -25,15 +25,14 @@ public class AddressBookView {
 		io.print("   5. List All Addresses");
 		io.print("   6. Exit");
 
-		return io.readInt("Please select from the above choices.", 1, 5);
+		return io.readInt("Please select from the above choices.", 1, 6);
 	}
 
 	public AddressBook getNewAddressInfo() {
 
 		AddressBook thisAddress = new AddressBook(
-				io.readString("Please enter AddressID:"));
+				io.readString("Please enter Last Name:"));
 		thisAddress.setFirstName(io.readString("Please enter First Name:"));
-		thisAddress.setLastName(io.readString("Please enter Last Name:"));
 		thisAddress.setStreetAddress(io.readString("Please enter Street Address:"));
 		thisAddress.setCity(io.readString("Please enter City:"));
 		thisAddress.setState(io.readString("Please enter State:"));
@@ -53,11 +52,14 @@ public class AddressBookView {
 		io.readString("Please hit enter to continue.");
 	}
 
-	public void displayBanner(String msg) {
-		io.print("=== " + msg + " Menu: ===");
+	public void displayMessage(String msg) {
+		io.print(msg);
 	}
 
-	public void generalMessageBanner(String msg) {
-		io.readString(msg + "Please Hit enter to continue");
+	public String displayMessageValue(String msg, boolean op) {
+		if (op)
+			return io.readString(msg + "Please Hit enter to continue");
+		else
+			return io.readString(msg);
 	}
 }
