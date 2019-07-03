@@ -1,12 +1,14 @@
-package com.sg.classroster.dao;
+package com.sg.classroster.service;
 
 import java.util.List;
 
+import com.sg.classroster.dao.ClassRosterPersistenceException;
 import com.sg.classroster.dto.Student;
 
-public interface ClassRosterDao {
+public interface ClassRosterServiceLayer {
 
-	Student addStudent(String studentId, Student student) throws ClassRosterPersistenceException;
+	void createStudent(Student student)
+			throws ClassRosterDuplicateIdException, ClassRosterDataValidationException, ClassRosterPersistenceException;
 
 	List<Student> getAllStudents() throws ClassRosterPersistenceException;
 
