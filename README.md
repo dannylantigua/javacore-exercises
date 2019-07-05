@@ -4,7 +4,7 @@ This repository holds exercises from the basic concepts to advanced Java. The fi
 
 1. Java Basics. [Variables, comments, functions, loops, conditionals, methods and Arrays]
 2. Classes and Objects. [Objects, Classes, Interfaces, Inheritance, Storage, Memory Management, Collections, Maps and more...]
-3. Intermediate Java.
+3. Intermediate Java. [Service Layer, Unit Testing, Lambdas, Streams, Aggregate Operations and more...]
 4. Advanced Java.
 
 By Danny Lantigua

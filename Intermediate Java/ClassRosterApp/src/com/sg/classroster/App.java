@@ -1,8 +1,12 @@
 package com.sg.classroster;
 
 import com.sg.classroster.controller.ClassRosterController;
+import com.sg.classroster.dao.ClassRosterAuditDao;
+import com.sg.classroster.dao.ClassRosterAuditDaoFileImpl;
 import com.sg.classroster.dao.ClassRosterDao;
 import com.sg.classroster.dao.ClassRosterDaoFileImpl;
+import com.sg.classroster.service.ClassRosterServiceLayer;
+import com.sg.classroster.service.ClassRosterServiceLayerImpl;
 import com.sg.classroster.ui.ClassRosterView;
 import com.sg.classroster.ui.UserIO;
 import com.sg.classroster.ui.UserIOConsoleImpl;
@@ -16,8 +20,12 @@ public class App {
 		ClassRosterView myView = new ClassRosterView(myIo);
 		// Instantiate the DAO
 		ClassRosterDao myDao = new ClassRosterDaoFileImpl();
+		// Instantiate the Audit DAO
+		ClassRosterAuditDao myAuditDao = new ClassRosterAuditDaoFileImpl();
+		// Instantiate the Service Layer and wire the DAO and Audit DAO into it
+		ClassRosterServiceLayer myService = new ClassRosterServiceLayerImpl(myDao, myAuditDao);
 		// Instantiate the Controller and wire the Service Layer into it
-		ClassRosterController controller = new ClassRosterController(myDao, myView);
+		ClassRosterController controller = new ClassRosterController(myService, myView);
 		// Kick off the Controller
 		controller.run();
 	}
