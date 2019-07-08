@@ -8,12 +8,17 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
+import com.sg.classroster.dao.ClassRosterDao;
 import com.sg.classroster.dao.ClassRosterDaoFileImpl;
 import com.sg.classroster.dto.Student;
 
 class ClassRosterDaoFileImplTest {
 
-	private ClassRosterDaoFileImpl dao;
+	private ClassRosterDao dao;
+
+	public ClassRosterDaoFileImplTest() {
+		dao = new ClassRosterDaoFileImpl();
+	}
 
 	@Before
 	public void setUp() throws Exception {
