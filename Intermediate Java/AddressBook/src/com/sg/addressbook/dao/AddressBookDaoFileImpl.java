@@ -23,7 +23,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 
 	@Override
 	public AddressBook addAddressBook(String lastName, AddressBook aBook) throws AddressBookDaoException {
-		AddressBook thisAddress = addressBook.put(aBook.getLastName(), aBook);
+		AddressBook thisAddress = addressBook.put(lastName, aBook);
 		writeFile();
 		return thisAddress;
 	}
@@ -101,5 +101,11 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 			out.flush();
 		}
 		out.close();
+	}
+
+	@Override
+	public AddressBook findAddressByLastName(String lastName, boolean var) throws AddressBookDaoException {
+		loadFile();
+		return addressBook.get(lastName);
 	}
 }

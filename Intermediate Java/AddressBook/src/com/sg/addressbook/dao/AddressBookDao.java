@@ -13,6 +13,8 @@ public interface AddressBookDao {
 
 	List<AddressBook> findAddressByLastName(String lastName) throws AddressBookDaoException;
 
+	AddressBook findAddressByLastName(String lastName, boolean var) throws AddressBookDaoException;
+
 	int addressCount();
 
 	List<AddressBook> listAllAddresses() throws AddressBookDaoException;
