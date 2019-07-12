@@ -27,6 +27,7 @@ In this section there are exercises for more advanced OOP concepts. These concep
 7. StudentQuizScores: Handling data using Collections.
 8. ClassRosterApp: Applying MVC / CRUD development.
 9. AddressBook App: Another exercise applying MVC / CRUD development.
+10. DVDLibrary App: Final exercise applying MVC / CRUD development.
 
 By Danny Lantigua
 lantiguagrullon@gmail.com

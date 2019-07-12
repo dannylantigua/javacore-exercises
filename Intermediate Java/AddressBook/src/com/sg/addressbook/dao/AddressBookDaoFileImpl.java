@@ -18,7 +18,7 @@ import com.sg.addressbook.dto.AddressBook;
 public class AddressBookDaoFileImpl implements AddressBookDao {
 
 	private Map<String, AddressBook> addressBook = new HashMap<>();
-	public static final String ROSTER_FILE = "addressBook.txt";
+	public static final String FILE = "addressBook.txt";
 	public static final String DELIMITER = "::";
 
 	@Override
@@ -60,7 +60,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 		Scanner scanner;
 
 		try {
-			scanner = new Scanner(new BufferedReader(new FileReader(ROSTER_FILE)));
+			scanner = new Scanner(new BufferedReader(new FileReader(FILE)));
 		} catch (FileNotFoundException e) {
 			throw new AddressBookDaoException("-_- Could not load roster data into memory.", e);
 		}
@@ -85,7 +85,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 		PrintWriter out;
 
 		try {
-			out = new PrintWriter(new FileWriter(ROSTER_FILE));
+			out = new PrintWriter(new FileWriter(FILE));
 		} catch (IOException e) {
 			throw new AddressBookDaoException("Could not save student data.", e);
 		}
