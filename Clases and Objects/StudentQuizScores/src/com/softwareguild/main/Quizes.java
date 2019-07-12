@@ -1,4 +1,4 @@
-package com.softwareguild.main.model;
+package com.softwareguild.main;
 
 /**
  *
