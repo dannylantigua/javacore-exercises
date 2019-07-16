@@ -62,7 +62,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 		try {
 			scanner = new Scanner(new BufferedReader(new FileReader(FILE)));
 		} catch (FileNotFoundException e) {
-			throw new AddressBookDaoException("-_- Could not load roster data into memory.", e);
+			throw new AddressBookDaoException("-_- Could not load Address Book data into memory.", e);
 		}
 
 		String currentLine;
@@ -87,7 +87,7 @@ public class AddressBookDaoFileImpl implements AddressBookDao {
 		try {
 			out = new PrintWriter(new FileWriter(FILE));
 		} catch (IOException e) {
-			throw new AddressBookDaoException("Could not save student data.", e);
+			throw new AddressBookDaoException("Could not save Address Book data.", e);
 		}
 
 		List<AddressBook> addressesList = this.listAllAddresses();

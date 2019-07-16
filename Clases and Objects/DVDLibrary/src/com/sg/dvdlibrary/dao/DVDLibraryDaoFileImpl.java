@@ -6,11 +6,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import com.sg.dvdlibrary.dto.DVDLibrary;
 
@@ -22,32 +24,38 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 
 	@Override
 	public DVDLibrary addDVDToCollection(String title, DVDLibrary dvd) throws DVDLibraryDaoException {
-		// TODO Auto-generated method stub
-		return null;
+		DVDLibrary dvdItem = dvdCollection.put(title, dvd);
+		writeFile();
+		return dvdItem;
 	}
 
 	@Override
 	public DVDLibrary removeDVD(String title) throws DVDLibraryDaoException {
-		// TODO Auto-generated method stub
-		return null;
+		DVDLibrary dvdItem = dvdCollection.remove(title);
+		writeFile();
+		return dvdItem;
 	}
 
 	@Override
 	public List<DVDLibrary> listAllDVDsInCollection() throws DVDLibraryDaoException {
-		// TODO Auto-generated method stub
-		return null;
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection.values());
 	}
 
 	@Override
 	public DVDLibrary getDVD(String title) throws DVDLibraryDaoException {
-		// TODO Auto-generated method stub
-		return null;
+		loadFile();
+		return dvdCollection.get(title);
 	}
 
 	@Override
 	public List<DVDLibrary> findDVDByTitle(String title) throws DVDLibraryDaoException {
-		// TODO Auto-generated method stub
-		return null;
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection
+				.values()
+				.stream()
+				.filter(s -> s.getTittle().equalsIgnoreCase(title))
+				.collect(Collectors.toList()));
 	}
 
 	private void loadFile() throws DVDLibraryDaoException {
@@ -56,7 +64,7 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 		try {
 			scanner = new Scanner(new BufferedReader(new FileReader(FILE)));
 		} catch (FileNotFoundException e) {
-			throw new DVDLibraryDaoException("-_- Could not load roster data into memory.", e);
+			throw new DVDLibraryDaoException("-_- Could not load DVD collection data into memory.", e);
 		}
 
 		String currentLine;
@@ -81,7 +89,7 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 		try {
 			out = new PrintWriter(new FileWriter(FILE));
 		} catch (IOException e) {
-			throw new DVDLibraryDaoException("Could not save student data.", e);
+			throw new DVDLibraryDaoException("Could not save DVD data.", e);
 		}
 
 		List<DVDLibrary> dvdList = this.listAllDVDsInCollection();
