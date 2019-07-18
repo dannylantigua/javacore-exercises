@@ -1,11 +1,11 @@
 package com.sg.dvdlibrary.dto;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class DVDLibrary {
 
 	private transient String tittle;
-	private transient Date releaseDate;
+	private transient LocalDate releaseDate;
 	private transient String mpaaRating;
 	private transient String directorName;
 	private transient String studio;
@@ -15,11 +15,11 @@ public class DVDLibrary {
 		this.tittle = tittle;
 	}
 
-	public Date getReleaseDate() {
+	public LocalDate getReleaseDate() {
 		return releaseDate;
 	}
 
-	public void setReleaseDate(Date releaseDate) {
+	public void setReleaseDate(LocalDate releaseDate) {
 		this.releaseDate = releaseDate;
 	}
 

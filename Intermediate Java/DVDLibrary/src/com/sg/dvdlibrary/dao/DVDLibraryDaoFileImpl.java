@@ -6,8 +6,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,6 +60,7 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 
 	private void loadFile() throws DVDLibraryDaoException {
 		Scanner scanner;
+		LocalDate ld;
 
 		try {
 			scanner = new Scanner(new BufferedReader(new FileReader(FILE)));
@@ -73,7 +74,8 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 			currentLine = scanner.nextLine();
 			currentTokens = currentLine.split(DELIMITER);
 			DVDLibrary dvd = new DVDLibrary(currentTokens[0]);
-			dvd.setReleaseDate(new Date(currentTokens[1]));
+			ld = LocalDate.parse(currentTokens[1]);
+			dvd.setReleaseDate(ld);
 			dvd.setMpaaRating(currentTokens[2]);
 			dvd.setDirectorName(currentTokens[3]);
 			dvd.setStudio(currentTokens[4]);
@@ -95,7 +97,7 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 		List<DVDLibrary> dvdList = this.listAllDVDsInCollection();
 		for(DVDLibrary thisDvd : dvdList) {
 			out.println(thisDvd.getTittle() + DELIMITER
-					+ thisDvd.getReleaseDate() + DELIMITER
+					+ thisDvd.getReleaseDate().toString() + DELIMITER
 					+ thisDvd.getMpaaRating() + DELIMITER
 					+ thisDvd.getDirectorName() + DELIMITER
 					+ thisDvd.getStudio() + DELIMITER

@@ -1,6 +1,6 @@
 package com.sg.dvdlibrary.ui;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import com.sg.dvdlibrary.dto.DVDLibrary;
@@ -31,11 +31,13 @@ public class DVDLibraryView {
 
 	public DVDLibrary getNewDVDInfo() {
 
+		LocalDate ld;
 		DVDLibrary thisDvd = new DVDLibrary(
 				io.readString("Please enter Title:"));
 		thisDvd.setDirectorName(io.readString("Please enter Director's Name:"));
 		thisDvd.setMpaaRating(io.readString("Please enter MpaaRating:"));
-		thisDvd.setReleaseDate(new Date(io.readString("Please enter Release Date (ddMMyyyy):")));
+		ld = LocalDate.parse(io.readString("Please enter Release Date (ddMMyyyy):"));
+		thisDvd.setReleaseDate(ld);
 		thisDvd.setStudio(io.readString("Please enter Studio:"));
 		thisDvd.setUserRatingNotes(io.readString("Please enter any comments or review:"));
 		return thisDvd;
@@ -56,8 +58,8 @@ public class DVDLibraryView {
 
 	public void displayDVDs(List<DVDLibrary> dvdCollection) {
 		for (DVDLibrary thisDvd : dvdCollection) {
-			io.print(thisDvd.getTittle() + " - " + thisDvd.getReleaseDate() + " - " +
-					thisDvd.getMpaaRating() + " stars.");
+			io.print(thisDvd.getTittle() + " - " + thisDvd.getReleaseDate().toString() + " - Rated " +
+					thisDvd.getMpaaRating());
 			io.print(thisDvd.getDirectorName());
 			io.print(thisDvd.getStudio());
 			io.print(thisDvd.getUserRatingNotes());
