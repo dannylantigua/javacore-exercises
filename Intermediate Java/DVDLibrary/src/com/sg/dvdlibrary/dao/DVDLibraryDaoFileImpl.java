@@ -106,4 +106,68 @@ public class DVDLibraryDaoFileImpl implements DVDLibraryDao {
 		}
 		out.close();
 	}
+
+	@Override
+	public List<DVDLibrary> getDVDsInNYears(int years) throws DVDLibraryDaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDsByMPPA(String mpaa) throws DVDLibraryDaoException {
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection
+				.values()
+				.stream()
+				.filter(s -> s.getMpaaRating().equalsIgnoreCase(mpaa))
+				.collect(Collectors.toList()));
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDsByDirector(String director) throws DVDLibraryDaoException {
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection
+				.values()
+				.stream()
+				.filter(s -> s.getDirectorName().equalsIgnoreCase(director))
+				.collect(Collectors.toList()));
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDsByStudio(String studio) throws DVDLibraryDaoException {
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection
+				.values()
+				.stream()
+				.filter(s -> s.getStudio().equalsIgnoreCase(studio))
+				.collect(Collectors.toList()));
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDNewest() throws DVDLibraryDaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDOldest() throws DVDLibraryDaoException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<DVDLibrary> getDVDsWithNotes() throws DVDLibraryDaoException {
+		loadFile();
+		return new ArrayList<DVDLibrary>(dvdCollection
+				.values()
+				.stream()
+				.filter(s -> s.getUserRatingNotes() != null)
+				.collect(Collectors.toList()));
+	}
+
+	@Override
+	public int getDVDsAverageAge() throws DVDLibraryDaoException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
