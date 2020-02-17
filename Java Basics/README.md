@@ -25,3 +25,4 @@ This folder holds exercises of the basic concepts of Java, includes the use of c
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
+dlantigua@kemper.com

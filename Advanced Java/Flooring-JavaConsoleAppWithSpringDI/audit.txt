@@ -1,0 +1,31 @@
+2018-02-13T18:02:48.450 : completeAddingNewOrder: OrderNumber: 1 |CostumerName: Danny Lantigua |State: pa |ProductType: wood |Area: 300 |Tax: 200.475000 |Total: 3170.475000
+2018-02-13T18:02:55.043 : saveCurrentWork: 
+2018-02-13T18:45:32.665 : completeAddingNewOrder: OrderNumber: 2 |CostumerName: grullon |State: in |ProductType: carpet |Area: 150 |Tax: 39.1500 |Total: 691.6500
+2018-02-13T18:45:35.868 : saveCurrentWork:
+2018-02-13T19:00:24.532 : updateOrder: 202132018OrderNumber: 2 |CostumerName: Grullon Aura |State: IN |ProductType: Carpet |Area: 146 |Tax: 38.1060 |Total: 673.2060
+2018-02-13T19:00:28.758 : saveCurrentWork: 02132018
+2018-02-14T10:33:47.884 : completeAddingNewOrder: OrderNumber: 1 |CostumerName: Cipriano |State: PA |ProductType: Laminate |Area: 210 |Tax: 54.573750 |Total: 863.073750
+2018-02-14T10:33:55.309 : saveCurrentWork: 02132018
+2018-02-14T10:34:37.002 : completeAddingNewOrder: OrderNumber: 2 |CostumerName: Manny |State: MI |ProductType: Tile |Area: 90 |Tax: 39.588750 |Total: 728.088750
+2018-02-14T10:35:23.623 : saveCurrentWork: 02142018
+2018-02-14T10:36:02.852 : saveCurrentWork: 02142018
+2018-02-14T10:54:06.476 : updateOrder: 102132018OrderNumber: 1 |CostumerName: Danny Lantigua |State: PA |ProductType: Wood |Area: 320 |Tax: 213.840000 |Total: 3381.840000
+2018-02-14T10:54:27.268 : updateOrder: 202132018OrderNumber: 2 |CostumerName: Grullon Aura |State: PA |ProductType: Laminate |Area: 90 |Tax: 23.388750 |Total: 369.888750
+2018-02-14T10:54:29.444 : saveCurrentWork: 02132018
+2018-02-14T13:51:26.505 : completeAddingNewOrder: OrderNumber: 3 |CostumerName: Federic |State: MI |ProductType: Wood |Area: 123 |Tax: 70.017750 |Total: 1287.717750
+2018-02-14T13:52:00.118 : saveCurrentWork: 
+2018-02-14T14:07:02.410 : saveCurrentWork: 
+2018-02-14T18:42:39.582 : updateOrder: 102132018OrderNumber: 1 |CostumerName: Danny Lantigua |State: PA |ProductType: Wood |Area: 310 |Tax: 207.157500 |Total: 3276.157500
+2018-02-14T18:43:14.978 : updateOrder: 202132018OrderNumber: 2 |CostumerName: Grullon Aura |State: PA |ProductType: Laminate |Area: 90 |Tax: 23.388750 |Total: 369.888750
+2018-02-14T18:44:11.767 : completeAddingNewOrder: OrderNumber: 4 |CostumerName: Jenny |State: IN |ProductType: Laminate |Area: 78 |Tax: 18.0180 |Total: 318.3180
+2018-02-14T18:44:25.949 : saveCurrentWork: 02132018
+2018-02-14T18:51:37.885 : completeAddingNewOrder: OrderNumber: 5 |CostumerName: Andrew |State: MI |ProductType: Tile |Area: 12 |Tax: 5.278500 |Total: 97.078500
+2018-02-14T18:51:41.261 : saveCurrentWork: 02142018
+2018-02-15T06:55:13.680 : completeAddingNewOrder: OrderNumber: 1 |CostumerName: Felicia |State: PA |ProductType: Wood |Area: 45 |Tax: 30.071250 |Total: 475.571250
+2018-02-15T06:55:16.824 : saveCurrentWork: 
+2018-02-15T06:56:25.159 : updateOrder: 402142018OrderNumber: 4 |CostumerName: Jenny |State: IN |ProductType: Carpet |Area: 78 |Tax: 20.3580 |Total: 359.6580
+2018-02-15T06:56:48.896 : completeAddingNewOrder: OrderNumber: 2 |CostumerName: Danny |State: PA |ProductType: Carpet |Area: 88 |Tax: 25.839000 |Total: 408.639000
+2018-02-15T06:56:51.652 : saveCurrentWork: 02142018
+2018-02-15T07:20:54.737 : completeAddingNewOrder: OrderNumber: 3 |CostumerName: Jesus |State: MI |ProductType: Tile |Area: 90 |Tax: 39.588750 |Total: 728.088750
+2018-02-15T07:21:18.664 : updateOrder: 302142018OrderNumber: 3 |CostumerName: Federic |State: OH |ProductType: Wood |Area: 123 |Tax: 76.106250 |Total: 1293.806250
+2018-02-15T07:21:21.872 : saveCurrentWork: 02142018
