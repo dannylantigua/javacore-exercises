@@ -6,6 +6,7 @@ This repository holds exercises from the basic concepts to advanced Java. The fi
 2. Classes and Objects. [Objects, Classes, Interfaces, Inheritance, Storage, Memory Management, Collections, Maps and more...]
 3. Intermediate Java. [Service Layer, Unit Testing, Lambdas, Streams, Aggregate Operations and more...]
 4. Advanced Java. [Spring, Maven, Spring DI, Spring AOP]
+5. OCA - OCP exercises. [Java exercises and notes for OCA - OCP Certs]
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
