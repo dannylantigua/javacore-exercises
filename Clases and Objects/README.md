@@ -31,3 +31,4 @@ In this section there are exercises for more advanced OOP concepts. These concep
 
 By Danny Lantigua
 lantiguagrullon@gmail.com
+dlantigua@kemper.com
