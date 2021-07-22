@@ -1,4 +1,4 @@
-public class ifThenStatements {
+public class IfThenStatements {
 	public static void main(String... args) {
 		
 		int hourOfDay = 10;
