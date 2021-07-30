@@ -30,6 +30,27 @@ public class ImportantStringMethods {
 		System.out.println("Abc123".toLowerCase());		// abc123
 		
 		// equals() and equalsIgnoreCase()
+		System.out.println("abc".equals("ABC"));		// false
+		System.out.println("ABC".equals("ABC"));		// true
+		System.out.println("abc".equalsIgnoreCase("ABC"));	// true
+		
+		// startsWith(0 and endsWith()
+		System.out.println("abc".startsWith("a"));	// true
+		System.out.println("abc".startsWith("A"));	// false
+		System.out.println("abc".endsWith("c"));	// true
+		System.out.println("abc".endsWith("a"));	// false
+		
+		// contains()
+		System.out.println("abc".contains("b"));	// true
+		System.out.println("abc".contains("B"));	// false
+		
+		// replace()
+		System.out.println("abcabc".replace('a', 'A'));		// AbcAbc - char is passed
+		System.out.println("abcabc".replace("a", "A"));		// AbcAbc - CharSequence is passed
+		
+		// trim()
+		System.out.println("abc".trim());			// abc
+		System.out.println("\t   a b c\n".trim());	// a b c
 		
 	}
 }
