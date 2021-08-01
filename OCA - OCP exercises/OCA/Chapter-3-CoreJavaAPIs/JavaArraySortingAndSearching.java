@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class JavaArraySortingAndSearching {
 	public static void main(String... args) {
 		
