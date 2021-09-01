@@ -1,0 +1,1 @@
+public abstract class AbstractBear implements HerbivoreV3, Omnivore {} // Does not compile

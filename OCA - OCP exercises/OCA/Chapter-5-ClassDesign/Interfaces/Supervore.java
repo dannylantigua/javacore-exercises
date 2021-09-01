@@ -1,0 +1,1 @@
+public interface Supervore extends HerviboreV3, Omnivore {}  // Does not compile
